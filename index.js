@@ -170,12 +170,16 @@ __webpack_require__.r(__webpack_exports__);
 
 window.Vue = vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a;
 
+vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("modal", {
+  template: "#modal-template"
+});
 var App = new vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#app",
   data: {
     isActive: false,
     scrollPosition: null,
-    isActiveSctoll: false
+    isActiveSctoll: false,
+    showModal: false
   },
   methods: {
     updateScroll: function updateScroll() {
