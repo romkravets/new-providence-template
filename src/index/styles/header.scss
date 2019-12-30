@@ -220,3 +220,22 @@
   box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
   background: rgb(38, 39, 45);
 }
+
+.section {
+  &__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 960px;
+    position: relative;
+    align-items: center;
+  }
+  &__time {
+    width: 50%;
+    background: antiquewhite;
+  }
+  &__reason {
+    width: 50%;
+    background: green;
+  }
+}
