@@ -20,6 +20,7 @@
   width: 100%;
   margin: 0 auto;
   align-items: center;
+  transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
   &__content {
     display: flex;
     align-items: center;
@@ -29,6 +30,9 @@
   }
   &__navigation {
     width: 5%;
+  }
+  &__navigstion-link {
+    padding: 1rem;
   }
   &__logo {
     margin: 0 auto;
@@ -47,6 +51,11 @@
   &__link {
     text-decoration: none;
     color: $base-font-color;
+    font-size: 16px;
+    padding: 1rem;
+    &:hover {
+      color: rgb(38, 125, 244);
+    }
   }
 }
 
@@ -81,6 +90,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__menu-close {
+    padding: 1rem;
+  }
   &__menu-close-icon {
     color: #ffffff;
   }
@@ -91,10 +103,14 @@
   }
   &__item {
     margin: 10px 0;
+    &:last-child {
+      margin-top: 25px;
+    }
   }
   &__link {
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
   }
   &__footer {
     position: absolute;
@@ -120,4 +136,13 @@
 
 .open {
   left: 0;
+}
+
+.active {
+  background-color: #ffffff;
+  padding: 24px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
