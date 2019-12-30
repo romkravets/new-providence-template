@@ -3,12 +3,17 @@ window.Vue = Vue;
 
 import "./index.scss";
 
+Vue.component("modal", {
+  template: "#modal-template"
+});
+
 var App = new Vue({
   el: "#app",
   data: {
     isActive: false,
     scrollPosition: null,
-    isActiveSctoll: false
+    isActiveSctoll: false,
+    showModal: false
   },
   methods: {
     updateScroll() {
