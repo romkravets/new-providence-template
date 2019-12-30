@@ -159,11 +159,13 @@
           src="../../assets/images/header_iphone.png"
         />
       </section>
-        <!-- modal -->
+    <!-- modal -->
    <div class="modal" v-if="showModal">
-    <button class="close" @click="showModal = false">x</button>
-    <h3>Title</h3>
-    <p>Description</p>
+     <div class="close-block">
+      <a class="close" @click="showModal = false" title="Close (Esc)" type="button"><i class="fa fa-times"></i></a>
+     </div>
+    <video class="video" src="https://player.vimeo.com/video/74220509?autoplay=1">
+    </video>
   </div>
     </div>
   </body>

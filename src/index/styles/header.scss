@@ -184,8 +184,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+  background: $light-color;
+  opacity: 0.8;
 }
 
 .modal-vue .modal {
@@ -193,16 +193,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  margin-right: -50%;
   z-index: 22;
   margin: 0 auto;
   padding: 20px 30px;
-  background-color: #fff;
-  transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+  background-color: $light-color;
+  overflow: hidden;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
 }
 
 .modal-vue .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.close-block {
+  display: block;
+  padding: 1rem;
+}
+
+.video {
+  height: 400px;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+  background: rgb(38, 39, 45);
 }
