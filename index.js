@@ -173,7 +173,23 @@ window.Vue = vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a;
 var App = new vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#app",
   data: {
-    isActive: false
+    isActive: false,
+    scrollPosition: null,
+    isActiveSctoll: false
+  },
+  methods: {
+    updateScroll: function updateScroll() {
+      this.scrollPosition = window.scrollY;
+
+      if (this.scrollPosition >= 20) {
+        this.isActiveSctoll = true;
+      } else {
+        this.isActiveSctoll = false;
+      }
+    }
+  },
+  mounted: function mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   }
 });
 
