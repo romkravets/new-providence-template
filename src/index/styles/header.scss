@@ -7,20 +7,30 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  min-height: 800px;
+  min-height: 850px;
   &__container {
     position: absolute;
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
   }
   &__title {
     font-size: 4rem;
     font-weight: 400;
   }
+  &__desctiption {
+    font-size: 1.3rem;
+    color: #8c8f94;
+  }
+  &__video-btn {
+    margin: 2rem 0;
+    display: inline-block;
+  }
   &__img-phone {
     position: absolute;
-    bottom: -310px;
+    bottom: -40%;
     left: 50%;
     margin-left: -185px;
   }
