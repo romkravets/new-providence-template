@@ -1,13 +1,29 @@
 @import "./variables.scss";
 .page-header {
-  //padding: 200px 0 510px;
+  padding: 200px 0 510px;
   background-image: url(../../assets/images/banner_background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 800px;
+  &__container {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  &__img-phone {
+    position: absolute;
+    bottom: -310px;
+    left: 50%;
+    margin-left: -185px;
+  }
 }
 
 .top-nav {
@@ -54,23 +70,27 @@
     font-size: 16px;
     padding: 1rem;
     &:hover {
-      color: rgb(38, 125, 244);
+      color: $accent-color;
     }
   }
 }
 
-@media (min-width: 600px) {
-  .page-header {
-    //padding: 200px 0 510px;
-    background-image: url(../../assets/images/banner_background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    min-height: 700px;
-  }
+.help-color-link {
+  color: rgba(38, 39, 45, 0.4);
 }
+
+// @media (min-width: 600px) {
+//   .page-header {
+//     //padding: 200px 0 510px;
+//     background-image: url(../../assets/images/banner_background.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+//     position: relative;
+//     overflow: hidden;
+//     min-height: 700px;
+//   }
+// }
 
 .menu-slide {
   position: fixed;
@@ -84,7 +104,7 @@
   z-index: 50;
   background: #26272d;
   transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
-  color: #ffffff;
+  color: $light-color;
   &__logo {
     display: flex;
     align-items: center;
@@ -94,7 +114,7 @@
     padding: 1rem;
   }
   &__menu-close-icon {
-    color: #ffffff;
+    color: $light-color;
   }
   &__items {
     padding: 0;
@@ -108,7 +128,7 @@
     }
   }
   &__link {
-    color: #ffffff;
+    color: $light-color;
     text-decoration: none;
     font-size: 16px;
   }
@@ -131,7 +151,7 @@
 }
 
 .socials .fab {
-  color: #ffffff;
+  color: $light-color;
 }
 
 .open {
@@ -139,7 +159,7 @@
 }
 
 .active {
-  background-color: #ffffff;
+  background-color: $light-color;
   padding: 24px 0;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);

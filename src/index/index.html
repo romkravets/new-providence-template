@@ -12,7 +12,7 @@
   <body >
     <!-- <div id="app">{{message}}</div> -->
     <div id="app" class="page-wrapper" >
-      <header class="page-header">
+      <header>
         <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
           <div class="top-nav__content">
           <div class="top-nav__navigation" @click="isActive = !isActive" v-on:click.stop.prevent>
@@ -41,7 +41,7 @@
          <div>
            <ul class="top-nav__items">
              <li class="top-nav__item">
-               <a class="top-nav__link" href="#">Help</a>
+               <a class="top-nav__link help-color-link" href="#">Help</a>
               </li>
              <li class="top-nav__item">
                <a class="top-nav__link" href="#">Contacts</a>
@@ -99,5 +99,12 @@
           </div>
         </div>
       </header>
+      <section class="page-header">
+        <div class="page-header__container">
+          <h1 class="page-header__title">What happens tomorrow?</h1>
+          <p>The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</p>
+        </div>
+        <img class="page-header__img-phone" src="../../assets/images/header_iphone.png">
+      </section>
     </div>
 </html>
