@@ -16,8 +16,6 @@
   margin: 1rem auto;
   align-items: center;
   padding: 0 3rem;
-  //justify-content: space-evenly;
-  //justify-content: space-around;
   &__navigation {
     width: 5%;
   }
@@ -48,4 +46,22 @@
     overflow: hidden;
     min-height: 700px;
   }
+}
+
+.slide_out_menu {
+  position: fixed;
+  display: block;
+  width: 380px;
+  max-width: 650px;
+  height: 100%;
+  left: -380px;
+  top: 0;
+  padding: 40px;
+  z-index: 50;
+  background: #26272d;
+  transition: left 0.7s cubic-bezier(0.545, 0, 0.05);
+}
+
+.open {
+  left: 0;
 }

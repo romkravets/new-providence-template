@@ -9,12 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
-  <body>
+  <body >
     <!-- <div id="app">{{message}}</div> -->
-    <div class="page-wrapper">
+    <div class="page-wrapper" id="app">
       <header class="page-header">
         <nav class="top-nav">
-          <div class="top-nav__navigation">
+          <div class="top-nav__navigation" @click="isActive = !isActive">
             <a href="#">
               <i class="fa fa-bars"></i>
             </a>
@@ -54,6 +54,33 @@
            </ul>
          </div>
         </nav>
+        <div class="slide_out_menu" :class="{ open: isActive }">
+          <a href="#" class="menu-close" :class="{ open: isActive }" @click="isActive = !isActive"><i class="fa fa-times"></i></a>
+          <div class="logo"><img src="../../assets/images/logo-white.png" alt=""></div>
+          <ul>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#" class="btn btn-blue"><i class="fa fa-apple"></i> Get App</a></li>
+          </ul>
+  
+          <div class="slide_out_menu_footer">
+            <div class="more-info">
+              <p>Made with love by <a href="http://getcraftwork.com">Craft Work</a></p>
+              <p>Developed by <a href="http://ruibogasdesign.net/">Rui Bogas</a>
+            </p></div>
+            <ul class="socials">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </header>
     </div>
 </html>
