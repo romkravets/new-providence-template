@@ -66,3 +66,20 @@ select {
   -webkit-box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
 }
+
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 16px;
+  text-decoration: none;
+  color: #26272d;
+  border: 1px solid rgba(38, 39, 45, 0.1);
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+
+.btn-blue {
+  background-color: #267df4;
+  color: white;
+}
