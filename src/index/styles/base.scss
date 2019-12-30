@@ -53,7 +53,7 @@ select {
 }
 
 .page-wrapper {
-  max-width: 1440px;
+  //max-width: 1440px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,4 +86,11 @@ select {
 
 .btn-lg {
   padding: 14px 48px;
+}
+
+.main-contant {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background: #ffffff;
 }
