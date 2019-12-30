@@ -9,59 +9,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
-  <body >
+  <body>
     <!-- <div id="app">{{message}}</div> -->
-    <div id="app" class="page-wrapper" >
+    <div id="app" class="page-wrapper modal-vue">
+      <div class="overlay" v-if="showModal" @click="showModal = false"></div>
       <header>
         <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
           <div class="top-nav__content">
-          <div class="top-nav__navigation" @click="isActive = !isActive" v-on:click.stop.prevent>
-            <a class="top-nav__navigstion-link" href="#" >
-              <i class="fa fa-bars"></i>
-            </a>
+            <div
+              class="top-nav__navigation"
+              @click="isActive = !isActive"
+              v-on:click.stop.prevent
+            >
+              <a class="top-nav__navigstion-link" href="#">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <div>
+              <ul class="top-nav__items">
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">Tour</a>
+                </li>
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">Futures</a>
+                </li>
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-nav__logo">
+              <a href="#">
+                <img src="../../assets/images/logo.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <ul class="top-nav__items">
+                <li class="top-nav__item">
+                  <a class="top-nav__link help-color-link" href="#">Help</a>
+                </li>
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">Contacts</a>
+                </li>
+                <li class="top-nav__item">
+                  <a class="btn btn-blue" href="#">
+                    <i class="fab fa-apple"></i>
+                    Get App
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <ul class="top-nav__items">
-              <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Tour</a>
-              </li>
-              <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Futures</a>
-              </li>
-              <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
-         <div class="top-nav__logo">
-           <a href="#">
-            <img src="../../assets/images/logo.png" alt="">
-           </a>
-         </div>
-         <div>
-           <ul class="top-nav__items">
-             <li class="top-nav__item">
-               <a class="top-nav__link help-color-link" href="#">Help</a>
-              </li>
-             <li class="top-nav__item">
-               <a class="top-nav__link" href="#">Contacts</a>
-              </li>
-             <li class="top-nav__item">
-               <a class="btn btn-blue" href="#">
-                <i class="fab fa-apple"></i>
-                Get App
-               </a>
-              </li>
-           </ul>
-         </div>
-        </div>
         </nav>
         <div class="menu-slide" :class="{ open: isActive }">
           <div class="menu-slide__logo">
             <div class="logo">
-              <img src="../../assets/images/logo-white.png" alt="">
+              <img src="../../assets/images/logo-white.png" alt="" />
             </div>
-            <a href="#" class="menu-slide__menu-close" :class="{ open: isActive }" @click="isActive = !isActive" v-on:click.stop.prevent><i class="menu-slide__menu-close-icon fa fa-times"></i></a>
+            <a
+              href="#"
+              class="menu-slide__menu-close"
+              :class="{ open: isActive }"
+              @click="isActive = !isActive"
+              v-on:click.stop.prevent
+              ><i class="menu-slide__menu-close-icon fa fa-times"></i
+            ></a>
           </div>
           <ul class="menu-slide__items">
             <li class="menu-slide__item">
@@ -80,21 +92,45 @@
               <a class="menu-slide__link" href="#">Contacts</a>
             </li>
             <li class="menu-slide__item">
-              <a class="menu-slide__link btn btn-blue" href="#" class="btn btn-blue"><i class="fab fa-apple"></i> Get App</a></li>
+              <a
+                class="menu-slide__link btn btn-blue"
+                href="#"
+                class="btn btn-blue"
+                ><i class="fab fa-apple"></i> Get App</a
+              >
+            </li>
           </ul>
-  
+
           <div class="menu-slide__footer">
             <div class="more-info">
-              <p>Made with love by <a href="http://getcraftwork.com">Craft Work</a></p>
-              <p>Developed by <a href="https://github.com/romkravets">romkravets</a>
-            </p></div>
+              <p>
+                Made with love by
+                <a href="http://getcraftwork.com">Craft Work</a>
+              </p>
+              <p>
+                Developed by
+                <a href="https://github.com/romkravets">romkravets</a>
+              </p>
+            </div>
             <ul class="menu-slide__items socials">
-              <li class="socials__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="socials__item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li class="socials__item"><a href="#"><i class="fab fa-google-plus"></i></a></li>
-              <li class="socials__item"><a href="#"><i class="fab fa-tumblr"></i></a></li>
-              <li class="socials__item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-              <li class="socials__item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-tumblr"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -102,13 +138,36 @@
       <section class="page-header">
         <div class="page-header__container">
           <h1 class="page-header__title">What happens tomorrow?</h1>
-          <p class="page-header__desctiption">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</p>
-          <a href="#" class="page-header__video-btn btn btn-lg">
+          <p class="page-header__desctiption">
+            The sight of the tumblers restored Bob Sawyer to a degree of
+            equanimity which he had not possessed since his interview with his
+            landlady. His face brightened up, and he began to feel quite
+            convivial.
+          </p>
+          <a
+            href="#"
+            class="page-header__video-btn btn btn-lg"
+            id="show-modal"
+            @click="showModal = true"
+          >
             <i class="fa fa-play"></i>
             Watch Video
           </a>
         </div>
-        <img class="page-header__img-phone" src="../../assets/images/header_iphone.png">
+        <img
+          class="page-header__img-phone"
+          src="../../assets/images/header_iphone.png"
+        />
       </section>
+        <!-- modal -->
+   <div class="modal" v-if="showModal">
+    <button class="close" @click="showModal = false">x</button>
+    <h3>Title</h3>
+    <p>Description</p>
+  </div>
     </div>
+  </body>
+
+  
+</div>
 </html>
