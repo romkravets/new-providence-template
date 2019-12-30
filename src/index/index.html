@@ -11,12 +11,12 @@
   </head>
   <body >
     <!-- <div id="app">{{message}}</div> -->
-    <div class="page-wrapper" id="app">
+    <div id="app" class="page-wrapper" >
       <header class="page-header">
-        <nav class="top-nav">
+        <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
           <div class="top-nav__content">
           <div class="top-nav__navigation" @click="isActive = !isActive">
-            <a href="#">
+            <a class="top-nav__navigstion-link" href="#">
               <i class="fa fa-bars"></i>
             </a>
           </div>
@@ -86,7 +86,7 @@
           <div class="menu-slide__footer">
             <div class="more-info">
               <p>Made with love by <a href="http://getcraftwork.com">Craft Work</a></p>
-              <p>Developed by <a href="http://ruibogasdesign.net/">Rui Bogas</a>
+              <p>Developed by <a href="https://github.com/romkravets">romkravets</a>
             </p></div>
             <ul class="menu-slide__items socials">
               <li class="socials__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
