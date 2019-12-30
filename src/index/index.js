@@ -20,6 +20,7 @@ var App = new Vue({
       }
     }
   },
+
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
   }

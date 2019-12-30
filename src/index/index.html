@@ -15,8 +15,8 @@
       <header class="page-header">
         <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
           <div class="top-nav__content">
-          <div class="top-nav__navigation" @click="isActive = !isActive">
-            <a class="top-nav__navigstion-link" href="#">
+          <div class="top-nav__navigation" @click="isActive = !isActive" v-on:click.stop.prevent>
+            <a class="top-nav__navigstion-link" href="#" >
               <i class="fa fa-bars"></i>
             </a>
           </div>
@@ -61,7 +61,7 @@
             <div class="logo">
               <img src="../../assets/images/logo-white.png" alt="">
             </div>
-            <a href="#" class="menu-slide__menu-close" :class="{ open: isActive }" @click="isActive = !isActive"><i class="menu-slide__menu-close-icon fa fa-times"></i></a>
+            <a href="#" class="menu-slide__menu-close" :class="{ open: isActive }" @click="isActive = !isActive" v-on:click.stop.prevent><i class="menu-slide__menu-close-icon fa fa-times"></i></a>
           </div>
           <ul class="menu-slide__items">
             <li class="menu-slide__item">
