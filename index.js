@@ -181,7 +181,7 @@ var App = new vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a({
     updateScroll: function updateScroll() {
       this.scrollPosition = window.scrollY;
 
-      if (this.scrollPosition >= 20) {
+      if (this.scrollPosition >= 40) {
         this.isActiveSctoll = true;
       } else {
         this.isActiveSctoll = false;
