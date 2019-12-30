@@ -4,8 +4,8 @@ window.Vue = Vue;
 import "./index.scss";
 
 var App = new Vue({
-  el: "#app",
-  data: {
-    message: "It's working"
-  }
+  // el: "#app",
+  // data: {
+  //   message: "It's working"
+  // }
 });
