@@ -77,6 +77,8 @@ select {
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-blue {
@@ -93,4 +95,10 @@ select {
   -ms-flex-positive: 1;
   flex-grow: 1;
   background: #ffffff;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
 }

@@ -7,7 +7,7 @@ Vue.component("modal", {
   template: "#modal-template"
 });
 
-var App = new Vue({
+new Vue({
   el: "#app",
   data: {
     isActive: false,

@@ -61,3 +61,53 @@
     }
   }
 }
+
+.iphone {
+  // position: relative;
+  padding: 200px 0 330px;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+  }
+  &__image {
+    width: 50%;
+    // position: relative;
+    // left: -15%;
+    // bottom: 0;
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+  }
+  &__title-container {
+    padding: 5rem 0 0 5rem;
+  }
+  &__btn-container {
+    margin-top: 4rem;
+  }
+  &__btn-icon {
+    margin-left: 50px;
+  }
+  &__btn-blue {
+    margin-right: 3rem;
+  }
+}
+
+// .iphone__img {
+//   left: 50%;
+//   width: 50%;
+//   width: 340px;
+//   height: 580px;
+//   margin-left: 0;
+//   position: absolute;
+//   background-size: 340px 624px;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: left center;
+//   background-image: url(../../assets/images/iphone-feature.png);
+// }
