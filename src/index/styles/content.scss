@@ -124,11 +124,27 @@
     position: absolute;
     top: 0;
   }
-  &__prodact {
+  &__title-partner {
     margin-top: 2rem;
+    text-transform: uppercase;
+  }
+  &__partners {
+    margin-top: 1.5rem;
     display: flex;
   }
   &__dropbox {
     margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .map {
+    &__img {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      padding: 0 15px;
+      margin-top: 64px;
+    }
   }
 }
