@@ -116,6 +116,18 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  .iphone {
+    padding: 100px 0 130px;
+    &__title-container {
+      padding: 0;
+    }
+    &__btn-icon {
+      margin-left: 20px;
+    }
+  }
+}
+
 .map {
   &__title-container {
     padding: 0;
