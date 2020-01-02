@@ -7,13 +7,17 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Templare</title>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Roman Kravets" content="John Doe">
     <script src="http://localhost:35729/livereload.js"></script>
   <link href="./vendors~index.css" rel="stylesheet"><link href="./index.css" rel="stylesheet"></head>
   <body>
     <div id="app" class="page-wrapper modal-vue">
       <div class="overlay" v-if="showModal" @click="showModal = false"></div>
       <header>
-        <nav 
+        <nav
           class="top-nav"
           id="topNav"
           :class="{ active: isActiveSctoll }"
@@ -160,6 +164,7 @@
         <img
           class="page-header__img-phone"
           src="./assets/images/header_iphone.png"
+          alt=""
         />
       </section>
       <main class="main-contant">
@@ -181,12 +186,13 @@
         <div class="section__content iphone__content">
             <div class="iphone__image iphone__img-container">
               <img class="iphone__img" src="./assets/images/iphone-feature.png" alt="">
-              <!-- <figure class="iphone__img"></figure> -->
             </div>
           <div  class="iphone__image iphone__title-container">
             <h2 class="title iphone__title">Your day is protected</h2>
-            <p class="desctiption">There have not been any since we have lived here, said my mother.</p>
-            <p class="desctiption">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
+            <p class="desctiption">There have not been any since we have lived here, said my mother.
+              <br>
+              <br>
+            We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
           <div class="iphone__btn-container">
             <button class="btn btn-blue iphone__btn-blue">Try to hack us <i class="iphone__btn-icon fa fa-arrow-right"></i></button>
             <button class="btn">Learn More</button>
@@ -194,6 +200,26 @@
           </div>
         </div>
         </section>
+
+        <section class="section iphone">
+          <div class="section__content iphone__content">
+            <div  class="iphone__image iphone__title-container map__title-container">
+              <h2 class="title iphone__title">We are almost everywhere</h2>
+              <p class="desctiption">Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.
+              <br>
+              <br>
+              Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+              <h3 class="map__title-partner">Partners</h3>
+              <div class="map__partners">
+              <img class="map__dropbox" src="./assets/images/dropbox.png" alt="">
+              <img src="./assets/images/evernote.png">
+            </div>
+            </div>
+            <div class="iphone__image iphone__img-container">
+              <img class="map__img" src="./assets/images/map.png" alt="">
+            </div>
+          </div>
+          </section>
       </main>
 
     <!-- modal -->
