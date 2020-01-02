@@ -61,6 +61,7 @@
 .iphone {
   // position: relative;
   padding: 200px 0 330px;
+  overflow: hidden;
   &__content {
     display: flex;
     flex-direction: row;
@@ -112,5 +113,22 @@
     &__img-container {
       order: 2;
     }
+  }
+}
+
+.map {
+  &__title-container {
+    padding: 0;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+  }
+  &__prodact {
+    margin-top: 2rem;
+    display: flex;
+  }
+  &__dropbox {
+    margin-right: 3rem;
   }
 }
