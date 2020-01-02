@@ -10,11 +10,14 @@
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
   <body>
-    <!-- <div id="app">{{message}}</div> -->
     <div id="app" class="page-wrapper modal-vue">
       <div class="overlay" v-if="showModal" @click="showModal = false"></div>
       <header>
-        <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
+        <nav 
+          class="top-nav"
+          id="topNav"
+          :class="{ active: isActiveSctoll }"
+          >
           <div class="top-nav__content">
             <div
               class="top-nav__navigation"
@@ -25,7 +28,7 @@
                 <i class="fa fa-bars"></i>
               </a>
             </div>
-            <div>
+            <div class="display-value">
               <ul class="top-nav__items">
                 <li class="top-nav__item">
                   <a class="top-nav__link" href="#">Tour</a>
@@ -43,7 +46,7 @@
                 <img src="../../assets/images/logo.png" alt="" />
               </a>
             </div>
-            <div>
+            <div class="display-value">
               <ul class="top-nav__items">
                 <li class="top-nav__item">
                   <a class="top-nav__link help-color-link" href="#">Help</a>
@@ -161,7 +164,7 @@
       </section>
       <main class="main-contant">
         <section class="section feature">
-          <div class="section__content">
+          <div class="section__content feature__content">
             <div class="feature__time">
               <img class="feature__img" src="../../assets/images/lock.svg" alt="">
               <h3 class="feature__title">Real-time all the time</h3>
@@ -173,6 +176,23 @@
               <p class="desctiption">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said. This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
             </div>
           </div>
+        </section>
+        <section class="section iphone">
+        <div class="section__content iphone__content">
+            <div class="iphone__image iphone__img-container">
+              <img class="iphone__img" src="../../assets/images/iphone-feature.png" alt="">
+              <!-- <figure class="iphone__img"></figure> -->
+            </div>
+          <div  class="iphone__image iphone__title-container">
+            <h2 class="title iphone__title">Your day is protected</h2>
+            <p class="desctiption">There have not been any since we have lived here, said my mother.</p>
+            <p class="desctiption">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
+          <div class="iphone__btn-container">
+            <button class="btn btn-blue iphone__btn-blue">Try to hack us <i class="iphone__btn-icon fa fa-arrow-right"></i></button>
+            <button class="btn">Learn More</button>
+          </div>
+          </div>
+        </div>
         </section>
       </main>
 
