@@ -10,11 +10,14 @@
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
   <body>
-    <!-- <div id="app">{{message}}</div> -->
     <div id="app" class="page-wrapper modal-vue">
       <div class="overlay" v-if="showModal" @click="showModal = false"></div>
       <header>
-        <nav class="top-nav" id="topNav" :class="{ active: isActiveSctoll }">
+        <nav 
+          class="top-nav"
+          id="topNav"
+          :class="{ active: isActiveSctoll }"
+          >
           <div class="top-nav__content">
             <div
               class="top-nav__navigation"
@@ -25,7 +28,7 @@
                 <i class="fa fa-bars"></i>
               </a>
             </div>
-            <div>
+            <div class="display-value">
               <ul class="top-nav__items">
                 <li class="top-nav__item">
                   <a class="top-nav__link" href="#">Tour</a>
@@ -43,7 +46,7 @@
                 <img src="../../assets/images/logo.png" alt="" />
               </a>
             </div>
-            <div>
+            <div class="display-value">
               <ul class="top-nav__items">
                 <li class="top-nav__item">
                   <a class="top-nav__link help-color-link" href="#">Help</a>
@@ -161,7 +164,7 @@
       </section>
       <main class="main-contant">
         <section class="section feature">
-          <div class="section__content">
+          <div class="section__content feature__content">
             <div class="feature__time">
               <img class="feature__img" src="../../assets/images/lock.svg" alt="">
               <h3 class="feature__title">Real-time all the time</h3>
