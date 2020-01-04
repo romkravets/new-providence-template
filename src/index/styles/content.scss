@@ -162,7 +162,7 @@
 }
 
 .iphone-screens {
-  padding: 140px 0 800px;
+  padding: 140px 0 440px;
   position: relative;
   background-color: #f4f4f5;
   overflow: hidden;
@@ -199,4 +199,64 @@
     position: absolute;
     top: 20%;
   }
+}
+
+.ready-to-buy {
+  padding: 120px 0 130px;
+  background-color: #f4f4f5;
+  &__title {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 4rem;
+  }
+  &__form {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  &__form-container {
+    width: 502px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+  &__button-buy {
+    text-align: center;
+  }
+  &__download {
+    display: flex;
+    align-items: center;
+    padding: 9px 28px;
+    margin-top: 2rem;
+  }
+  &__button-icon {
+    margin-left: 18px;
+  }
+}
+
+.download-btn {
+  display: flex;
+}
+
+.btn-download-icon {
+  font-size: 32px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 18px;
+}
+
+.btn-download-title {
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+}
+
+.btn-download-title-bold {
+  font-size: 22px;
+  line-height: 18px;
 }
