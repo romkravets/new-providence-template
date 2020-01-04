@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
     position: relative;
     align-items: center;
     margin: 0 auto;
@@ -277,12 +277,12 @@
     width: 50%;
   }
   &__description {
-    //text-align: left;
+    padding-right: 7rem;
   }
   &__talk-link {
     margin-top: 3rem;
   }
-  &__title {
+  &__top-title {
     margin-bottom: 4rem;
   }
   &__price-tables {
@@ -294,8 +294,18 @@
     position: relative;
     width: 340px;
     max-width: 50%;
-    background-color: #ffffff;
     padding: 60px 15px 70px;
+  }
+  &__starter {
+    background-color: #ffffff;
+    z-index: 2;
+    transform: scale(1.1);
+    box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -moz-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+  }
+  &__pro {
+    background-color: #ebebed;
   }
   &__lists {
     list-style: none;
@@ -334,6 +344,17 @@
     margin-bottom: 38px;
     color: #8c8f94;
   }
+  &__btn {
+    display: inline-block;
+    margin-top: 3rem;
+    width: 210px;
+    max-width: 100%;
+  }
+  &__btn-pro {
+    background-color: transparent;
+    border: 1px solid #267df4;
+    color: #267df4;
+  }
 }
 
 .plan__lists .fa {
@@ -341,7 +362,7 @@
 }
 
 .toggle-container {
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .switch-toggles {
