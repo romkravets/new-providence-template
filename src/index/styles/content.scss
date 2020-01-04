@@ -269,3 +269,118 @@
     margin-top: 1rem;
   }
 }
+
+.plan {
+  padding: 160px 0 190px;
+  background-color: #f4f4f5;
+  &__block {
+    width: 50%;
+  }
+  &__description {
+    //text-align: left;
+  }
+  &__talk-link {
+    margin-top: 3rem;
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__price-tables {
+    display: flex;
+  }
+  &__starter,
+  &__pro {
+    text-align: center;
+    position: relative;
+    width: 340px;
+    max-width: 50%;
+    background-color: #ffffff;
+    padding: 60px 15px 70px;
+  }
+  &__lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #26272d;
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 300;
+    margin: 0 auto 28px;
+  }
+  &__price {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #26272d;
+    padding: 9px 18px;
+    border: 1px solid rgba(38, 39, 45, 0.2);
+    display: inline-block;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+  }
+  &__phrase {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 38px;
+    color: #8c8f94;
+  }
+}
+
+.plan__lists .fa {
+  color: #6fc754;
+}
+
+.toggle-container {
+  margin-bottom: 2rem;
+}
+
+.switch-toggles {
+  position: relative;
+  width: 262px;
+  height: 50px;
+  border: 1px solid rgba(38, 39, 45, 0.2);
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+
+.individual,
+.company {
+  position: relative;
+  width: 130px;
+  float: left;
+  padding: 13px 10px;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  //font-size: 16px;
+  color: #8c8f94;
+  transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.switch-toggles:after {
+  position: absolute;
+  content: "";
+  width: 122px;
+  height: 42px;
+  background: #ffffff;
+  left: 3px;
+  top: 3px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+  -moz-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+  -webkitbox-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
