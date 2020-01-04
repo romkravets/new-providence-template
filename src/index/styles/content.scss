@@ -260,3 +260,12 @@
   font-size: 22px;
   line-height: 18px;
 }
+
+.subscribe {
+  padding: 120px 0 130px;
+  &__description {
+    text-align: center;
+    color: #8c8f94;
+    margin-top: 1rem;
+  }
+}
