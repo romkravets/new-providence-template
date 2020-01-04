@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 960px;
     position: relative;
     align-items: center;
     margin: 0 auto;
@@ -404,4 +404,21 @@
   -moz-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
   -webkitbox-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
   transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+@media (max-width: 991.98px) {
+  .plan {
+    &__content {
+      flex-direction: column;
+    }
+    &__block {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      height: 550px;
+    }
+    &__description {
+      padding: 0 5rem;
+    }
+  }
 }

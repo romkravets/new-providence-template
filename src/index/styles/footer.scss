@@ -59,3 +59,14 @@
     color: #26272d;
   }
 }
+
+@media (max-width: 991.98px) {
+  .page-footer {
+    &__menu {
+      display: none;
+    }
+    &__social-block {
+      margin: 0;
+    }
+  }
+}
