@@ -160,3 +160,43 @@
     }
   }
 }
+
+.iphone-screens {
+  padding: 140px 0 800px;
+  position: relative;
+  background-color: #f4f4f5;
+  overflow: hidden;
+  &__content {
+    flex-direction: column;
+  }
+  &__title {
+    margin: 0 0 5rem 0;
+    text-align: center;
+  }
+  &__line-blue {
+    width: 50px;
+    height: 2px;
+    margin: 40px auto;
+    background-color: #267df4;
+    border: none;
+  }
+  &__desctiption {
+    margin: 1rem 0;
+  }
+  &__images {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    margin: 0.5rem;
+    box-shadow: 10px 10px 16px 0px rgba(61, 61, 62, 0.15);
+    &_margin {
+      margin-right: 29rem;
+    }
+  }
+  &__main-img {
+    box-shadow: none;
+    position: absolute;
+    top: 20%;
+  }
+}
