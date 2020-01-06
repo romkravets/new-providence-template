@@ -136,3 +136,17 @@ input[type="email"] {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
 }
+
+@media (max-width: 575.98px) {
+  input[type="text"],
+  input[type="email"] {
+    width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  input[type="text"],
+  input[type="email"] {
+    width: 300px;
+  }
+}
